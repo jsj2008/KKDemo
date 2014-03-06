@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3204B46718C858FF00C303AA /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3204B45518C858FF00C303AA /* Main_iPad.storyboard */; };
+		3204B46818C858FF00C303AA /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3204B45718C858FF00C303AA /* Main_iPhone.storyboard */; };
+		3204B46918C858FF00C303AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3204B45918C858FF00C303AA /* InfoPlist.strings */; };
+		3204B46A18C858FF00C303AA /* IGChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3204B45B18C858FF00C303AA /* IGChart.framework */; };
+		3204B46B18C858FF00C303AA /* IGChart.framework.zip in Resources */ = {isa = PBXBuildFile; fileRef = 3204B45C18C858FF00C303AA /* IGChart.framework.zip */; };
+		3204B46C18C858FF00C303AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3204B45D18C858FF00C303AA /* Images.xcassets */; };
+		3204B46D18C858FF00C303AA /* KKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3204B45F18C858FF00C303AA /* KKAppDelegate.m */; };
+		3204B46E18C858FF00C303AA /* KKDemo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3204B46018C858FF00C303AA /* KKDemo-Info.plist */; };
+		3204B46F18C858FF00C303AA /* KKFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3204B46318C858FF00C303AA /* KKFirstViewController.m */; };
+		3204B47018C858FF00C303AA /* KKSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3204B46518C858FF00C303AA /* KKSecondViewController.m */; };
+		3204B47118C858FF00C303AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3204B46618C858FF00C303AA /* main.m */; };
 		322B6A0D18B415F3001C8191 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 322B69E918B415F3001C8191 /* AFHTTPRequestOperation.m */; };
 		322B6A0E18B415F3001C8191 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 322B69EB18B415F3001C8191 /* AFHTTPRequestOperationManager.m */; };
 		322B6A0F18B415F3001C8191 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 322B69ED18B415F3001C8191 /* AFHTTPSessionManager.m */; };
@@ -29,21 +40,11 @@
 		323B1AEE18ADDB5500A74BC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323B1AED18ADDB5500A74BC9 /* Foundation.framework */; };
 		323B1AF018ADDB5500A74BC9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323B1AEF18ADDB5500A74BC9 /* CoreGraphics.framework */; };
 		323B1AF218ADDB5500A74BC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323B1AF118ADDB5500A74BC9 /* UIKit.framework */; };
-		323B1AF818ADDB5500A74BC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 323B1AF618ADDB5500A74BC9 /* InfoPlist.strings */; };
-		323B1AFA18ADDB5500A74BC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 323B1AF918ADDB5500A74BC9 /* main.m */; };
-		323B1AFE18ADDB5500A74BC9 /* KKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 323B1AFD18ADDB5500A74BC9 /* KKAppDelegate.m */; };
-		323B1B0118ADDB5500A74BC9 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323B1AFF18ADDB5500A74BC9 /* Main_iPhone.storyboard */; };
-		323B1B0718ADDB5500A74BC9 /* KKFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 323B1B0618ADDB5500A74BC9 /* KKFirstViewController.m */; };
-		323B1B0A18ADDB5500A74BC9 /* KKSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 323B1B0918ADDB5500A74BC9 /* KKSecondViewController.m */; };
-		323B1B0C18ADDB5500A74BC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323B1B0B18ADDB5500A74BC9 /* Images.xcassets */; };
 		323B1B1318ADDB5500A74BC9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323B1B1218ADDB5500A74BC9 /* XCTest.framework */; };
 		323B1B1418ADDB5500A74BC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323B1AED18ADDB5500A74BC9 /* Foundation.framework */; };
 		323B1B1518ADDB5500A74BC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323B1AF118ADDB5500A74BC9 /* UIKit.framework */; };
-		323B1B1D18ADDB5500A74BC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 323B1B1B18ADDB5500A74BC9 /* InfoPlist.strings */; };
-		323B1B1F18ADDB5500A74BC9 /* KKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 323B1B1E18ADDB5500A74BC9 /* KKDemoTests.m */; };
 		323B1B2918ADDC4000A74BC9 /* IGChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323B1B2818ADDC4000A74BC9 /* IGChart.framework */; };
 		3251F5B418BF18C200552F51 /* KKOhlc.m in Sources */ = {isa = PBXBuildFile; fileRef = 3251F5B318BF18C200552F51 /* KKOhlc.m */; };
-		32C4A21218C4505F00AC0D49 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C4A21018C4505F00AC0D49 /* Main_iPad.storyboard */; };
 		32C4A21418C4645D00AC0D49 /* IGChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323B1B2818ADDC4000A74BC9 /* IGChart.framework */; };
 		32F4244218C5DA7600DCA6E4 /* KKTicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F4244118C5DA7600DCA6E4 /* KKTicker.m */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3204B45618C858FF00C303AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		3204B45818C858FF00C303AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		3204B45A18C858FF00C303AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3204B45B18C858FF00C303AA /* IGChart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IGChart.framework; sourceTree = "<group>"; };
+		3204B45C18C858FF00C303AA /* IGChart.framework.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = IGChart.framework.zip; sourceTree = "<group>"; };
+		3204B45D18C858FF00C303AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3204B45E18C858FF00C303AA /* KKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKAppDelegate.h; sourceTree = "<group>"; };
+		3204B45F18C858FF00C303AA /* KKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKAppDelegate.m; sourceTree = "<group>"; };
+		3204B46018C858FF00C303AA /* KKDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "KKDemo-Info.plist"; sourceTree = "<group>"; };
+		3204B46118C858FF00C303AA /* KKDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KKDemo-Prefix.pch"; sourceTree = "<group>"; };
+		3204B46218C858FF00C303AA /* KKFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKFirstViewController.h; sourceTree = "<group>"; };
+		3204B46318C858FF00C303AA /* KKFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKFirstViewController.m; sourceTree = "<group>"; };
+		3204B46418C858FF00C303AA /* KKSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKSecondViewController.h; sourceTree = "<group>"; };
+		3204B46518C858FF00C303AA /* KKSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKSecondViewController.m; sourceTree = "<group>"; };
+		3204B46618C858FF00C303AA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		322B69E818B415F3001C8191 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		322B69E918B415F3001C8191 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		322B69EA18B415F3001C8191 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -103,27 +119,11 @@
 		323B1AED18ADDB5500A74BC9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		323B1AEF18ADDB5500A74BC9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		323B1AF118ADDB5500A74BC9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		323B1AF518ADDB5500A74BC9 /* KKDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KKDemo-Info.plist"; sourceTree = "<group>"; };
-		323B1AF718ADDB5500A74BC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		323B1AF918ADDB5500A74BC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		323B1AFB18ADDB5500A74BC9 /* KKDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KKDemo-Prefix.pch"; sourceTree = "<group>"; };
-		323B1AFC18ADDB5500A74BC9 /* KKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKAppDelegate.h; sourceTree = "<group>"; };
-		323B1AFD18ADDB5500A74BC9 /* KKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKAppDelegate.m; sourceTree = "<group>"; };
-		323B1B0018ADDB5500A74BC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		323B1B0518ADDB5500A74BC9 /* KKFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKFirstViewController.h; sourceTree = "<group>"; };
-		323B1B0618ADDB5500A74BC9 /* KKFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKFirstViewController.m; sourceTree = "<group>"; };
-		323B1B0818ADDB5500A74BC9 /* KKSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSecondViewController.h; sourceTree = "<group>"; };
-		323B1B0918ADDB5500A74BC9 /* KKSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKSecondViewController.m; sourceTree = "<group>"; };
-		323B1B0B18ADDB5500A74BC9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		323B1B1118ADDB5500A74BC9 /* KKDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KKDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		323B1B1218ADDB5500A74BC9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		323B1B1A18ADDB5500A74BC9 /* KKDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KKDemoTests-Info.plist"; sourceTree = "<group>"; };
-		323B1B1C18ADDB5500A74BC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		323B1B1E18ADDB5500A74BC9 /* KKDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKDemoTests.m; sourceTree = "<group>"; };
 		323B1B2818ADDC4000A74BC9 /* IGChart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IGChart.framework; path = Library/Frameworks/IGChart.framework; sourceTree = DEVELOPER_DIR; };
 		3251F5B218BF18C200552F51 /* KKOhlc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKOhlc.h; sourceTree = "<group>"; };
 		3251F5B318BF18C200552F51 /* KKOhlc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKOhlc.m; sourceTree = "<group>"; };
-		32C4A21118C4505F00AC0D49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		32F4244018C5DA7600DCA6E4 /* KKTicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTicker.h; sourceTree = "<group>"; };
 		32F4244118C5DA7600DCA6E4 /* KKTicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTicker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +137,7 @@
 				323B1AF018ADDB5500A74BC9 /* CoreGraphics.framework in Frameworks */,
 				323B1AF218ADDB5500A74BC9 /* UIKit.framework in Frameworks */,
 				323B1AEE18ADDB5500A74BC9 /* Foundation.framework in Frameworks */,
+				3204B46A18C858FF00C303AA /* IGChart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +155,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3204B45418C858FF00C303AA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3204B45518C858FF00C303AA /* Main_iPad.storyboard */,
+				3204B45718C858FF00C303AA /* Main_iPhone.storyboard */,
+				3204B45918C858FF00C303AA /* InfoPlist.strings */,
+				3204B45B18C858FF00C303AA /* IGChart.framework */,
+				3204B45C18C858FF00C303AA /* IGChart.framework.zip */,
+				3204B45D18C858FF00C303AA /* Images.xcassets */,
+				3204B45E18C858FF00C303AA /* KKAppDelegate.h */,
+				3204B45F18C858FF00C303AA /* KKAppDelegate.m */,
+				3204B46018C858FF00C303AA /* KKDemo-Info.plist */,
+				3204B46118C858FF00C303AA /* KKDemo-Prefix.pch */,
+				3204B46218C858FF00C303AA /* KKFirstViewController.h */,
+				3204B46318C858FF00C303AA /* KKFirstViewController.m */,
+				3204B46418C858FF00C303AA /* KKSecondViewController.h */,
+				3204B46518C858FF00C303AA /* KKSecondViewController.m */,
+				3204B46618C858FF00C303AA /* main.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		322B69E718B415F3001C8191 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,12 +252,11 @@
 		323B1AE118ADDB5500A74BC9 = {
 			isa = PBXGroup;
 			children = (
+				3204B45418C858FF00C303AA /* Core */,
 				322B6A1E18B41669001C8191 /* Models */,
 				322B6A2118B41669001C8191 /* Networking */,
 				322B69E718B415F3001C8191 /* AFNetworking */,
 				322B69FB18B415F3001C8191 /* UIKit+AFNetworking */,
-				323B1AF318ADDB5500A74BC9 /* KKDemo */,
-				323B1B1818ADDB5500A74BC9 /* KKDemoTests */,
 				323B1AEC18ADDB5500A74BC9 /* Frameworks */,
 				323B1AEB18ADDB5500A74BC9 /* Products */,
 			);
@@ -259,52 +281,6 @@
 				323B1B1218ADDB5500A74BC9 /* XCTest.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		323B1AF318ADDB5500A74BC9 /* KKDemo */ = {
-			isa = PBXGroup;
-			children = (
-				323B1AFC18ADDB5500A74BC9 /* KKAppDelegate.h */,
-				323B1AFD18ADDB5500A74BC9 /* KKAppDelegate.m */,
-				32C4A21018C4505F00AC0D49 /* Main_iPad.storyboard */,
-				323B1AFF18ADDB5500A74BC9 /* Main_iPhone.storyboard */,
-				323B1B0518ADDB5500A74BC9 /* KKFirstViewController.h */,
-				323B1B0618ADDB5500A74BC9 /* KKFirstViewController.m */,
-				323B1B0818ADDB5500A74BC9 /* KKSecondViewController.h */,
-				323B1B0918ADDB5500A74BC9 /* KKSecondViewController.m */,
-				323B1B0B18ADDB5500A74BC9 /* Images.xcassets */,
-				323B1AF418ADDB5500A74BC9 /* Supporting Files */,
-			);
-			path = KKDemo;
-			sourceTree = "<group>";
-		};
-		323B1AF418ADDB5500A74BC9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				323B1AF518ADDB5500A74BC9 /* KKDemo-Info.plist */,
-				323B1AF618ADDB5500A74BC9 /* InfoPlist.strings */,
-				323B1AF918ADDB5500A74BC9 /* main.m */,
-				323B1AFB18ADDB5500A74BC9 /* KKDemo-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		323B1B1818ADDB5500A74BC9 /* KKDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				323B1B1E18ADDB5500A74BC9 /* KKDemoTests.m */,
-				323B1B1918ADDB5500A74BC9 /* Supporting Files */,
-			);
-			path = KKDemoTests;
-			sourceTree = "<group>";
-		};
-		323B1B1918ADDB5500A74BC9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				323B1B1A18ADDB5500A74BC9 /* KKDemoTests-Info.plist */,
-				323B1B1B18ADDB5500A74BC9 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,10 +360,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				323B1B0C18ADDB5500A74BC9 /* Images.xcassets in Resources */,
-				32C4A21218C4505F00AC0D49 /* Main_iPad.storyboard in Resources */,
-				323B1B0118ADDB5500A74BC9 /* Main_iPhone.storyboard in Resources */,
-				323B1AF818ADDB5500A74BC9 /* InfoPlist.strings in Resources */,
+				3204B46B18C858FF00C303AA /* IGChart.framework.zip in Resources */,
+				3204B46C18C858FF00C303AA /* Images.xcassets in Resources */,
+				3204B46818C858FF00C303AA /* Main_iPhone.storyboard in Resources */,
+				3204B46E18C858FF00C303AA /* KKDemo-Info.plist in Resources */,
+				3204B46918C858FF00C303AA /* InfoPlist.strings in Resources */,
+				3204B46718C858FF00C303AA /* Main_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +373,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				323B1B1D18ADDB5500A74BC9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,28 +385,28 @@
 			files = (
 				322B6A1B18B415F3001C8191 /* UIProgressView+AFNetworking.m in Sources */,
 				322B6A1918B415F3001C8191 /* UIButton+AFNetworking.m in Sources */,
+				3204B46F18C858FF00C303AA /* KKFirstViewController.m in Sources */,
 				322B6A2418B41669001C8191 /* KKSpread.m in Sources */,
+				3204B47018C858FF00C303AA /* KKSecondViewController.m in Sources */,
 				322B6A1C18B415F3001C8191 /* UIRefreshControl+AFNetworking.m in Sources */,
 				322B6A1818B415F3001C8191 /* UIAlertView+AFNetworking.m in Sources */,
-				323B1B0A18ADDB5500A74BC9 /* KKSecondViewController.m in Sources */,
 				32F4244218C5DA7600DCA6E4 /* KKTicker.m in Sources */,
 				322B6A1118B415F3001C8191 /* AFSecurityPolicy.m in Sources */,
-				323B1B0718ADDB5500A74BC9 /* KKFirstViewController.m in Sources */,
 				322B6A0E18B415F3001C8191 /* AFHTTPRequestOperationManager.m in Sources */,
 				322B6A1218B415F3001C8191 /* AFURLConnectionOperation.m in Sources */,
 				322B6A1A18B415F3001C8191 /* UIImageView+AFNetworking.m in Sources */,
 				322B6A0D18B415F3001C8191 /* AFHTTPRequestOperation.m in Sources */,
 				322B6A1718B415F3001C8191 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				322B6A2518B4166A001C8191 /* KKAPIClient.m in Sources */,
-				323B1AFE18ADDB5500A74BC9 /* KKAppDelegate.m in Sources */,
+				3204B47118C858FF00C303AA /* main.m in Sources */,
 				322B6A1318B415F3001C8191 /* AFURLRequestSerialization.m in Sources */,
 				322B6A0F18B415F3001C8191 /* AFHTTPSessionManager.m in Sources */,
 				322B6A1018B415F3001C8191 /* AFNetworkReachabilityManager.m in Sources */,
+				3204B46D18C858FF00C303AA /* KKAppDelegate.m in Sources */,
 				322B6A1418B415F3001C8191 /* AFURLResponseSerialization.m in Sources */,
 				322B6A1D18B415F3001C8191 /* UIWebView+AFNetworking.m in Sources */,
 				322B6A1518B415F3001C8191 /* AFURLSessionManager.m in Sources */,
 				322B6A1618B415F3001C8191 /* AFNetworkActivityIndicatorManager.m in Sources */,
-				323B1AFA18ADDB5500A74BC9 /* main.m in Sources */,
 				3251F5B418BF18C200552F51 /* KKOhlc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,7 +415,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				323B1B1F18ADDB5500A74BC9 /* KKDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,36 +429,28 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		323B1AF618ADDB5500A74BC9 /* InfoPlist.strings */ = {
+		3204B45518C858FF00C303AA /* Main_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				323B1AF718ADDB5500A74BC9 /* en */,
+				3204B45618C858FF00C303AA /* Base */,
 			);
-			name = InfoPlist.strings;
+			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
-		323B1AFF18ADDB5500A74BC9 /* Main_iPhone.storyboard */ = {
+		3204B45718C858FF00C303AA /* Main_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				323B1B0018ADDB5500A74BC9 /* Base */,
+				3204B45818C858FF00C303AA /* Base */,
 			);
 			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		323B1B1B18ADDB5500A74BC9 /* InfoPlist.strings */ = {
+		3204B45918C858FF00C303AA /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				323B1B1C18ADDB5500A74BC9 /* en */,
+				3204B45A18C858FF00C303AA /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		32C4A21018C4505F00AC0D49 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				32C4A21118C4505F00AC0D49 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -570,10 +538,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/mpatel/mp/experiments/KKDemo/Core,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KKDemo/KKDemo-Prefix.pch";
-				INFOPLIST_FILE = "KKDemo/KKDemo-Info.plist";
+				GCC_PREFIX_HEADER = "Core/KKDemo-Prefix.pch";
+				INFOPLIST_FILE = "Core/KKDemo-Info.plist";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -588,10 +557,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/mpatel/mp/experiments/KKDemo/Core,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KKDemo/KKDemo-Prefix.pch";
-				INFOPLIST_FILE = "KKDemo/KKDemo-Info.plist";
+				GCC_PREFIX_HEADER = "Core/KKDemo-Prefix.pch";
+				INFOPLIST_FILE = "Core/KKDemo-Info.plist";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -609,7 +579,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KKDemo/KKDemo-Prefix.pch";
+				GCC_PREFIX_HEADER = "Core/KKDemo-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -632,7 +602,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KKDemo/KKDemo-Prefix.pch";
+				GCC_PREFIX_HEADER = "Core/KKDemo-Prefix.pch";
 				INFOPLIST_FILE = "KKDemoTests/KKDemoTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
