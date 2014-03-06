@@ -43,9 +43,7 @@
 		323B1B1318ADDB5500A74BC9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323B1B1218ADDB5500A74BC9 /* XCTest.framework */; };
 		323B1B1418ADDB5500A74BC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323B1AED18ADDB5500A74BC9 /* Foundation.framework */; };
 		323B1B1518ADDB5500A74BC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323B1AF118ADDB5500A74BC9 /* UIKit.framework */; };
-		323B1B2918ADDC4000A74BC9 /* IGChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323B1B2818ADDC4000A74BC9 /* IGChart.framework */; };
 		3251F5B418BF18C200552F51 /* KKOhlc.m in Sources */ = {isa = PBXBuildFile; fileRef = 3251F5B318BF18C200552F51 /* KKOhlc.m */; };
-		32C4A21418C4645D00AC0D49 /* IGChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323B1B2818ADDC4000A74BC9 /* IGChart.framework */; };
 		32F4244218C5DA7600DCA6E4 /* KKTicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F4244118C5DA7600DCA6E4 /* KKTicker.m */; };
 /* End PBXBuildFile section */
 
@@ -121,7 +119,6 @@
 		323B1AF118ADDB5500A74BC9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		323B1B1118ADDB5500A74BC9 /* KKDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KKDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		323B1B1218ADDB5500A74BC9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		323B1B2818ADDC4000A74BC9 /* IGChart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IGChart.framework; path = Library/Frameworks/IGChart.framework; sourceTree = DEVELOPER_DIR; };
 		3251F5B218BF18C200552F51 /* KKOhlc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKOhlc.h; sourceTree = "<group>"; };
 		3251F5B318BF18C200552F51 /* KKOhlc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKOhlc.m; sourceTree = "<group>"; };
 		32F4244018C5DA7600DCA6E4 /* KKTicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTicker.h; sourceTree = "<group>"; };
@@ -133,11 +130,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				323B1B2918ADDC4000A74BC9 /* IGChart.framework in Frameworks */,
+				3204B46A18C858FF00C303AA /* IGChart.framework in Frameworks */,
 				323B1AF018ADDB5500A74BC9 /* CoreGraphics.framework in Frameworks */,
 				323B1AF218ADDB5500A74BC9 /* UIKit.framework in Frameworks */,
 				323B1AEE18ADDB5500A74BC9 /* Foundation.framework in Frameworks */,
-				3204B46A18C858FF00C303AA /* IGChart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +144,6 @@
 				323B1B1318ADDB5500A74BC9 /* XCTest.framework in Frameworks */,
 				323B1B1518ADDB5500A74BC9 /* UIKit.framework in Frameworks */,
 				323B1B1418ADDB5500A74BC9 /* Foundation.framework in Frameworks */,
-				32C4A21418C4645D00AC0D49 /* IGChart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +269,6 @@
 		323B1AEC18ADDB5500A74BC9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				323B1B2818ADDC4000A74BC9 /* IGChart.framework */,
 				323B1AED18ADDB5500A74BC9 /* Foundation.framework */,
 				323B1AEF18ADDB5500A74BC9 /* CoreGraphics.framework */,
 				323B1AF118ADDB5500A74BC9 /* UIKit.framework */,
