@@ -95,28 +95,28 @@
     def.legendPalette.outlineColor = [[IGBrush alloc] initWithR:0.7 andG:0.7 andB:0.7 andA:1];
     
     IGChartPaletteItem* item1 = [[IGChartPaletteItem alloc] init];
-    item1.color = [[IGBrush alloc] initWithR:1 andG:.63 andB:0 andA:1];
+    item1.color = [[IGBrush alloc] initWithR:1 andG:.7 andB:.1 andA:1];
     item1.outlineColor = [[IGBrush alloc] initWithR:0 andG:0 andB:0 andA:1];
     [def.seriesPalettes addObject:item1];
     
     IGChartPaletteItem* item2 = [[IGChartPaletteItem alloc] init];
-    item2.color = [[IGBrush alloc] initWithR:.54 andG:.6 andB:.05 andA:1];
-    item2.outlineColor = [[IGBrush alloc] initWithR:1 andG:1 andB:0 andA:0];
+    item2.color = [[IGBrush alloc] initWithR:.2 andG:.2 andB:.2 andA:.4];
+    item2.outlineColor = [[IGBrush alloc] initWithR:1 andG:1 andB:1 andA:1];
     [def.seriesPalettes addObject:item2];
     
     IGChartPaletteItem* item3 = [[IGChartPaletteItem alloc] init];
     item3.color = [[IGBrush alloc] initWithR:.94 andG:.3 andB:.05 andA:1];
-    item3.outlineColor = [[IGBrush alloc] initWithR:0 andG:0 andB:0 andA:0];
+    item3.outlineColor = [[IGBrush alloc] initWithR:0 andG:0 andB:0 andA:1];
     [def.seriesPalettes addObject:item3];
     
     IGChartPaletteItem* item4 = [[IGChartPaletteItem alloc] init];
     item4.color = [[IGBrush alloc] initWithR:.5 andG:.06 andB:.42 andA:1];
-    item4.outlineColor = [[IGBrush alloc] initWithR:0 andG:0 andB:0 andA:0];
+    item4.outlineColor = [[IGBrush alloc] initWithR:0 andG:0 andB:0 andA:1];
     [def.seriesPalettes addObject:item4];
     
     IGChartPaletteItem* item5 = [[IGChartPaletteItem alloc] init];
     item5.color = [[IGBrush alloc] initWithR:.98 andG:.66 andB:.06 andA:1];
-    item5.outlineColor = [[IGBrush alloc] initWithR:0 andG:0 andB:0 andA:0];
+    item5.outlineColor = [[IGBrush alloc] initWithR:0 andG:0 andB:0 andA:1];
     [def.seriesPalettes addObject:item5];
     
     
