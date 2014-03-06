@@ -40,7 +40,16 @@
             [mutablePosts addObject:ohlc];
         }
         
-        NSArray* ret = [mutablePosts subarrayWithRange:NSMakeRange([mutablePosts count]-48, 48)];
+        NSArray* ret;
+        if([mutablePosts count] > 48) {
+            ret = [mutablePosts subarrayWithRange:NSMakeRange([mutablePosts count]-48, 48)];
+        } else {
+            if ([mutablePosts count] == 0) {
+                return;
+            } else {
+                ret = [NSArray arrayWithArray:mutablePosts];
+            }
+        }
         
         if (block) {
             block(ret, nil);

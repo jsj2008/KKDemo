@@ -11,7 +11,5 @@
 
 @interface KKSecondViewController : UIViewController
 
-@property (nonatomic, assign) NSArray *ohlcs;
-@property (nonatomic, assign) UIView IBOutlet *chartContainer;
 
 @end

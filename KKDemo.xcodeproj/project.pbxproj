@@ -61,7 +61,7 @@
 		3204B45618C858FF00C303AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		3204B45818C858FF00C303AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		3204B45A18C858FF00C303AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3204B45B18C858FF00C303AA /* IGChart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IGChart.framework; sourceTree = "<group>"; };
+		3204B45B18C858FF00C303AA /* IGChart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IGChart.framework; path = Core/IGChart.framework; sourceTree = "<group>"; };
 		3204B45C18C858FF00C303AA /* IGChart.framework.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = IGChart.framework.zip; sourceTree = "<group>"; };
 		3204B45D18C858FF00C303AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3204B45E18C858FF00C303AA /* KKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKAppDelegate.h; sourceTree = "<group>"; };
@@ -156,7 +156,6 @@
 				3204B45518C858FF00C303AA /* Main_iPad.storyboard */,
 				3204B45718C858FF00C303AA /* Main_iPhone.storyboard */,
 				3204B45918C858FF00C303AA /* InfoPlist.strings */,
-				3204B45B18C858FF00C303AA /* IGChart.framework */,
 				3204B45C18C858FF00C303AA /* IGChart.framework.zip */,
 				3204B45D18C858FF00C303AA /* Images.xcassets */,
 				3204B45E18C858FF00C303AA /* KKAppDelegate.h */,
@@ -269,6 +268,7 @@
 		323B1AEC18ADDB5500A74BC9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3204B45B18C858FF00C303AA /* IGChart.framework */,
 				323B1AED18ADDB5500A74BC9 /* Foundation.framework */,
 				323B1AEF18ADDB5500A74BC9 /* CoreGraphics.framework */,
 				323B1AF118ADDB5500A74BC9 /* UIKit.framework */,

@@ -14,6 +14,8 @@
 @interface KKSecondViewController ()
 
 @property (nonatomic, assign) KKTicker *ticker;
+@property (nonatomic, assign) NSArray *ohlcs;
+@property (nonatomic, assign) UIView IBOutlet *chartContainer;
 @property (nonatomic, assign) UILabel IBOutlet *time;
 @property (nonatomic, assign) UILabel IBOutlet *currentPrice;
 @property (nonatomic, assign) UILabel IBOutlet *highlow;
@@ -29,7 +31,7 @@
 
 @implementation KKSecondViewController
 
-- (void)viewDidLoad
+- (void)fetchData
 {
     [KKOhlc fetchCurrentDayOhlcs:^(NSArray *ohlcs, NSError *error) {
         if (error)
@@ -64,36 +66,18 @@
             [self refreshTickerData];
         }
     }];
-    //    [KKSpread fetchData:^(NSArray *spreads, NSError *error) {
-    //        if (error)
-    //        {
-    //            [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", nil)
-    //                                        message:nil
-    //                                       delegate:nil
-    //                              cancelButtonTitle:@"OK"
-    //                              otherButtonTitles:nil] show];
-    //        }
-    //        else
-    //        {
-    //            NSMutableArray* asks = [NSMutableArray arrayWithCapacity:[spreads count]];
-    //            NSMutableArray* bids = [NSMutableArray arrayWithCapacity:[spreads count]];
-    //
-    //            for(KKSpread* spread in spreads) {
-    //                [asks addObject:spread.ask];
-    //                [bids addObject:spread.bid];
-    //            }
-    //        }
-    //    }];
-    
-    [super viewDidLoad];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
-    NSLog(@"asdsad");
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    NSLog(@"asdsad");
+    [self fetchData];
+}
+
+- (void)viewDidLoad {
+    //[self fetchData];
 }
 
 
@@ -140,6 +124,32 @@
     axis.outlineColor = [[IGBrush alloc] initWithR:.72 andG:.72 andB:.72 andA:.3];
     def.axisPalette = axis;
     return def;
+}
+
+- (void)animateTransition:(IGChartView *)chartView
+{
+    if([self.chartContainer.subviews count] == 0) {
+        [self.chartContainer addSubview:chartView];
+        [chartView setAlpha:0];
+        [UIView animateWithDuration:0.5
+                         animations:^{chartView.alpha=1;}
+                         completion:^(BOOL finished){  }];
+        return;
+    }
+    
+    for (UIView *subView in self.chartContainer.subviews)
+    {
+        [UIView animateWithDuration:0.5
+                         animations:^{subView.alpha=0.0;}
+                         completion:^(BOOL finished){
+                             [subView removeFromSuperview];
+                             [self.chartContainer addSubview:chartView];
+                             [chartView setAlpha:0];
+                             [UIView animateWithDuration:0.5
+                                              animations:^{chartView.alpha=1;}
+                                              completion:^(BOOL finished){  }];
+                         }];
+    }
 }
 
 - (IGChartView *)prepareChart
@@ -193,8 +203,6 @@
     xAxis.interval = 8640;
     xAxis.displayType = IGTimeAxisDisplayTypeContinuous;
     
-    //    IGCategoryXAxis *xAxis = [[IGCategoryXAxis alloc] initWithKey:@"xAxis"];
-    
     IGNumericYAxis *yAxis = [[IGNumericYAxis alloc] initWithKey:@"yAxis"];
     IGNumericYAxis *yAxisVolume = [[IGNumericYAxis alloc] initWithKey:@"yAxisVolume"];
     yAxisVolume.labelsLocation = IGAxisLabelsLocationOutsideRight;
@@ -213,12 +221,6 @@
     financialPriceSeries.dataSource = source;
     financialPriceSeries.displayType = IGPriceDisplayTypeCandlestick;
     
-    //    IGAbsoluteVolumeOscillatorIndicator *financialIndicator = [[IGAbsoluteVolumeOscillatorIndicator alloc] initWithKey:@"financialIndicator"];
-    //    financialIndicator.xAxis = xAxis;
-    //    financialIndicator.yAxis = yAxisVolume;
-    //    financialIndicator.dataSource = source;
-    //    financialIndicator.thickness = 1.0f;
-    
     IGColumnSeries *columnSeries = [[IGColumnSeries alloc] initWithKey:@"columnSeries"];
     columnSeries.xAxis = xAxis;
     columnSeries.yAxis = yAxisVolume;
@@ -232,12 +234,13 @@
     [chartView setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
     [chartView addSeries:financialPriceSeries];
     [chartView addSeries:columnSeries];
-    //    [chartView addSeries:financialIndicator];
     chartView.theme = [self getCustomTheme];
     
-    [self.chartContainer addSubview:chartView];
+
+    [self animateTransition:chartView];
     return chartView;
 }
+
 
 -(void) refreshOhlcData
 {
